@@ -3,7 +3,7 @@ import os
 import ast
 import json
 
-folder_path = './ramen'
+folder_path = './uci'
 
 # Ensure the folder path is valid
 if not os.path.exists(folder_path):
@@ -24,7 +24,7 @@ else:
                     try:
                         articulations_value = data['result']['articulations']
                         try:
-                            output_file_path = "./ramen_dump/"+filename
+                            output_file_path = "./uci-dump/"+filename
                             with open(output_file_path, 'w') as file:
                                 file.write(articulations_value)
                         except:
